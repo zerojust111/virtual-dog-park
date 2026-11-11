@@ -1,0 +1,14 @@
+# ---- OS / editor junk ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# ---- Secrets (never commit these) ----
+.env
+.env.*
+
+# ---- Build output ----
+dist/
+node_modules/
