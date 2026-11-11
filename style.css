@@ -173,6 +173,16 @@ h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5em; }
 
 .small { font-size: 13px; margin: 8px 0 0; }
 
+/* ---------- Review round: narrow screens ---------- */
+@media (max-width: 480px) {
+  .site-header { padding: 28px 16px 16px; }
+  .site-header h1 { font-size: 26px; }
+  .layout { padding: 8px 14px 36px; }
+  .panel { padding: 18px; }
+  .stat { grid-template-columns: 72px 1fr 44px; gap: 8px; }
+  .actions .btn { flex: 1 1 auto; }
+}
+
 .site-footer {
   text-align: center;
   color: var(--muted);
