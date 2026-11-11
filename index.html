@@ -54,10 +54,21 @@
           <span id="happiness-value" class="stat-value">5/10</span>
         </div>
 
+        <!-- Round 3: 成长阶段 + 经验值 -->
+        <div class="growth">
+          <div class="growth-head">
+            <span id="stage-badge" class="badge">🐾 Puppy</span>
+            <span id="xp-value" class="stat-value">0 XP</span>
+          </div>
+          <div class="bar bar-xp"><span id="xp-bar"></span></div>
+          <p id="next-stage" class="small muted"></p>
+        </div>
+
         <div class="actions">
           <button id="feed-btn" class="btn" type="button">🍖 Feed</button>
           <button id="play-btn" class="btn" type="button">🎾 Play</button>
           <button id="release-btn" class="btn btn-ghost" type="button">Change dog</button>
+          <button id="reset-btn" class="btn btn-ghost" type="button">🗑 Reset progress</button>
         </div>
 
         <p id="care-message" class="message" aria-live="polite"></p>
