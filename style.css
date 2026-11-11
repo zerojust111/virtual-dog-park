@@ -47,6 +47,30 @@ h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5em; }
 
 .muted { color: var(--muted); }
 
+/* ---------- Round 1: dog encyclopedia ---------- */
+.dog-grid {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.dog-card {
+  background: var(--primary-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  text-align: center;
+}
+
+.dog-emoji { font-size: 34px; display: block; }
+
+.dog-card h3 { font-size: 17px; margin: 6px 0 2px; }
+.dog-meta { margin: 0; font-size: 14px; color: var(--muted); }
+.dog-trait { margin: 8px 0 0; font-size: 14px; }
+
 .site-footer {
   text-align: center;
   color: var(--muted);
