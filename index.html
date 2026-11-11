@@ -23,10 +23,45 @@
       </ul>
     </section>
 
-    <!-- 第二轮会在这里加“照顾面板” -->
+    <!-- Round 2: 领养 + 喂食 + 玩耍 -->
     <section id="care" class="panel">
       <h2>Your Dog</h2>
-      <p class="muted">Coming in round 2.</p>
+
+      <!-- 还没领养时显示这一块 -->
+      <p id="care-empty" class="muted">
+        No dog yet — pick one above and press <strong>Adopt me</strong>.
+      </p>
+
+      <!-- 领养之后显示这一块（开始时隐藏） -->
+      <div id="care-dog" hidden>
+        <div class="care-head">
+          <span id="care-emoji" class="care-emoji" aria-hidden="true"></span>
+          <div>
+            <h3 id="care-name"></h3>
+            <p id="care-meta" class="dog-meta"></p>
+          </div>
+        </div>
+
+        <div class="stat">
+          <span class="stat-label">Hunger</span>
+          <div class="bar"><span id="hunger-bar"></span></div>
+          <span id="hunger-value" class="stat-value">5/10</span>
+        </div>
+
+        <div class="stat">
+          <span class="stat-label">Happiness</span>
+          <div class="bar"><span id="happiness-bar"></span></div>
+          <span id="happiness-value" class="stat-value">5/10</span>
+        </div>
+
+        <div class="actions">
+          <button id="feed-btn" class="btn" type="button">🍖 Feed</button>
+          <button id="play-btn" class="btn" type="button">🎾 Play</button>
+          <button id="release-btn" class="btn btn-ghost" type="button">Change dog</button>
+        </div>
+
+        <p id="care-message" class="message" aria-live="polite"></p>
+      </div>
     </section>
   </main>
 
